@@ -60,6 +60,47 @@ A simple Exponential graph would look like something.
 
 ****Poisson Distribution
 
+Is a descrete probability distribution that expresses the probability of a given number of events occuring in a fixed interval of time
+or space if these events occur with a known constant rate and independently of the time since the last event [13]. 
+
+The poisson Distribution applies when:
+
+1. The event os something that can be counted in integers
+1. Occurrences are independent, so that one occurrence neither deminishes nor increases the chance of another
+1. the average frequency of occurance for the time period is known,and:
+1. It is possible to count how many events have occured
+
+It most commenly used for rare events [14]
+
+>>> import numpy as np
+>>> s = np.random.poisson(5, 10000)
+Display histogram of the sample:
+
+>>>
+>>> import matplotlib.pyplot as plt
+>>> count, bins, ignored = plt.hist(s, 14, density=True)
+>>> plt.show()
+
+
+Hypergeometric Distribution
+
+Used to calculate the statistical significance of having drawn specific *k* successes (out of *n* draws) from the population. It is 
+often used to identify which sub-populations are over- or under-represented in the sample [15]. An example of the Hypergeometric
+distribution
+
+It is used in which selections are made from two groups without replacing members of the group. It is often  employed in random sampling
+for statistical quality control.
+
+>>> ngood, nbad, nsamp = 100, 2, 10
+# number of good, number of bad, and number of samples
+>>> s = np.random.hypergeometric(ngood, nbad, nsamp, 1000)
+>>> hist(s)
+#   note that it is very unlikely to grab both bad items
+
+>>> s = np.random.hypergeometric(15, 15, 15, 100000)
+>>> sum(s>=12)/100000. + sum(s<=3)/100000.
+#   answer = 0.003 ... pretty unlikely!
+
 
 
 
