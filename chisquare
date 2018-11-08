@@ -39,3 +39,27 @@ F distribution
 The F distribution tests whether two independent samples have been drawn for the normal populations with the same variance, or if 
 two independent estimates of the population variance are similar or not, as it is often desirable to compare two variances rather than
 two averages.[https://explorable.com/f-distribution]
+
+
+Exponential Distribution
+
+The Exponential distrobution is one of the most widely used continuous distributions. It can be described as the time taken between two 
+events occuring continuously and independently at a constant average rate [10]. This distribution has *memoryless* property meaning that
+it 'forgets' what has come before it, in other words, if you continue to wait, the length you wait, neither increases or descreases the
+probability of an event occuring [11].
+This distribution can be used for testing product reliability and for modelling waiting times.
+The below is the exponential function- f(x) = λe(−λx) where x ≥ 0. The parameter λ determines the “rate” at which events occur.
+
+THe graph illustrates how the shape of the distribution changes as the rate of change, λ, increase [12].
+
+A simple example
+
+A simple Exponential graph would look like something.
+
+
+
+****Poisson Distribution
+
+
+
+
